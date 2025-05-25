@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extras</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="extras.css" />
+    <link rel="icon" href="../pictures/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../pictures/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <a href="../home-page.html" class="back-link">← Homepage</a>
+        <h1>EXTRAS</h1>
+      </div>
+
+      <div class="menu-categories">
+        <div class="category active" data-category="all">All Extras</div>
+        <div class="category" data-category="sides">Sides</div>
+        <div class="category" data-category="desserts">Desserts</div>
+        <div class="category" data-category="specials">Special</div>
+      </div>
+
+      <table class="menu-table">
+        <thead>
+          <tr>
+            <th>Extra's</th>
+            <th>Price</th>
+            <th>Ingredients</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="menu-item sides">
+            <td class="menu-item-name">Chips</td>
+            <td class="price">35 TL</td>
+            <td class="description">With special spices</td>
+          </tr>
+          <tr class="menu-item sides">
+            <td class="menu-item-name">Onion Rings</td>
+            <td class="price">40 TL</td>
+            <td class="description">5 pieces, with special sauces</td>
+          </tr>
+          <tr class="menu-item sides">
+            <td class="menu-item-name">Crispy Corn</td>
+            <td class="price">30 TL</td>
+            <td class="description">Spicy or plain</td>
+          </tr>
+          <tr class="menu-item desserts">
+            <td class="menu-item-name">Baklava</td>
+            <td class="price">45 TL</td>
+            <td class="description">2 slices with pistachio</td>
+          </tr>
+          <tr class="menu-item desserts">
+            <td class="menu-item-name">Künefe</td>
+            <td class="price">55 TL</td>
+            <td class="description">Served with ice cream</td>
+          </tr>
+          <tr class="menu-item desserts">
+            <td class="menu-item-name">Sütlaç</td>
+            <td class="price">35 TL</td>
+            <td class="description">With cinnamon</td>
+          </tr>
+          <tr class="menu-item specials">
+            <td class="menu-item-name">Humus</td>
+            <td class="price">30 TL</td>
+            <td class="description">With olive oil and chili pepper</td>
+          </tr>
+          <tr class="menu-item specials">
+            <td class="menu-item-name">Cacık</td>
+            <td class="price">25 TL</td>
+            <td class="description">With mint and garlic</td>
+          </tr>
+          <tr class="menu-item specials">
+            <td class="menu-item-name">Ezme</td>
+            <td class="price">28 TL</td>
+            <td class="description">Spicy tomato salad</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="signature">
+        <p>Durumcu KAMİ © 2025</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const categories = document.querySelectorAll(".category");
+
+        categories.forEach((category) => {
+          category.addEventListener("click", function () {
+            categories.forEach((c) => c.classList.remove("active"));
+            this.classList.add("active");
+
+            const selectedCategory = this.getAttribute("data-category");
+            const items = document.querySelectorAll(".menu-item");
+
+            items.forEach((item) => {
+              if (selectedCategory === "all") {
+                item.style.display = "table-row";
+              } else {
+                if (item.classList.contains(selectedCategory)) {
+                  item.style.display = "table-row";
+                } else {
+                  item.style.display = "none";
+                }
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

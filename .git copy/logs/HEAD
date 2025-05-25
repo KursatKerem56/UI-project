@@ -1,0 +1,11 @@
+0000000000000000000000000000000000000000 a6062c03fb57396abf297ce2dae935ce0a784502 Kürşat Kerem Çevlik <kur.ker.cev@gmail.com> 1746980511 +0300	clone: from https://github.com/ismailkeremerkul/UI-Project.git
+a6062c03fb57396abf297ce2dae935ce0a784502 3b340573616a57c39f6edf5c33772d468091ced5 Kürşat Kerem Çevlik <kur.ker.cev@gmail.com> 1746980766 +0300	commit: .
+3b340573616a57c39f6edf5c33772d468091ced5 de6839fccee6f629ae0216a6993720be9e270b52 Kürşat Kerem Çevlik <kur.ker.cev@gmail.com> 1746981484 +0300	commit: image repeat problem is fixed
+de6839fccee6f629ae0216a6993720be9e270b52 1dd0ad7c09caff3d7282cd995d3da0b3e503e47a Kürşat Kerem Çevlik <kur.ker.cev@gmail.com> 1748126104 +0300	pull --ff --recurse-submodules --progress origin: Fast-forward
+1dd0ad7c09caff3d7282cd995d3da0b3e503e47a 978919905e954f409beda9ab17576b13828e2298 Kürşat Kerem Çevlik <kur.ker.cev@gmail.com> 1748126977 +0300	commit: readme file and removal of an unneccessary file called "index.js"
+978919905e954f409beda9ab17576b13828e2298 5cdcd18f71f24a4824591ff614a4e56389a69213 Kürşat Kerem Çevlik <kur.ker.cev@gmail.com> 1748176632 +0300	commit: readme file is updated
+5cdcd18f71f24a4824591ff614a4e56389a69213 322dcfcec45ea875b0a8bc12e27d10ee23aa01cc Kürşat Kerem Çevlik <kur.ker.cev@gmail.com> 1748176714 +0300	commit: new update for readme file
+322dcfcec45ea875b0a8bc12e27d10ee23aa01cc 94aecc231ebcf31c89beb3553add5aee45c9607a Kürşat Kerem Çevlik <kur.ker.cev@gmail.com> 1748176834 +0300	commit: final version
+0000000000000000000000000000000000000000 0e668341d0d9b17c164df0c99750b3a549e6cb19 Kürşat Kerem Çevlik <kur.ker.cev@gmail.com> 1748177440 +0300	commit (initial): Initial commit
+0e668341d0d9b17c164df0c99750b3a549e6cb19 0000000000000000000000000000000000000000 Kürşat Kerem Çevlik <kur.ker.cev@gmail.com> 1748177449 +0300	Branch: renamed refs/heads/latest_branch to refs/heads/main
+0000000000000000000000000000000000000000 0e668341d0d9b17c164df0c99750b3a549e6cb19 Kürşat Kerem Çevlik <kur.ker.cev@gmail.com> 1748177449 +0300	Branch: renamed refs/heads/latest_branch to refs/heads/main

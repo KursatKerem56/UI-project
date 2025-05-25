@@ -1,0 +1,153 @@
+:root {
+  --primary-color: #8b4513;
+  --secondary-color: #5d4037;
+  --accent-color: #a1887f;
+  --light-color: #f8ebdb;
+  --dark-color: #3e2723;
+  --text-color: #3e2723;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: #f8ebdb;
+  background-image: url(../pictures/background-image.png);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  background-color: #f8ebdb;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 3px solid var(--primary-color);
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+    2px 2px 0 #fff;
+}
+
+.homepage {
+
+  text-align: left;
+  margin-top: left;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: var(--primary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.back-link {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+}
+
+.menu-categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.category {
+  padding: 10px 20px;
+  background-color: var(--light-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+  box-shadow: var(--box-shadow);
+}
+
+.category:hover {
+  background-color: #dfe6e9;
+  transform: translateY(-2px);
+}
+
+.category.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.menu-table thead {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.menu-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.menu-table td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-table tbody tr {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.menu-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.menu-item-name {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.price {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.description {
+  font-style: italic;
+  color: #666;
+}
+
+.signature {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+  color: #666;
+}

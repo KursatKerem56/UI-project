@@ -1,0 +1,124 @@
+.header {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #8b4513;
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+    2px 2px 0 #fff;
+  font-family: "Arial Black", sans-serif;
+  letter-spacing: 3px;
+  margin: 0;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  border-bottom: 3px double #8b4513;
+  position: relative;
+}
+.durum-box {
+  background-color: #00ffff;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: black;
+  border: 2px solid #8B4513; 
+  border-radius: 8px; 
+  margin-bottom: 20px; 
+  color: #491414; 
+  -webkit-text-stroke: 0.5px #ffffff; 
+  font-family: 'Arial', sans-serif;
+  background-image: url(pictures/turkish-durums-menu-picture.jpg);
+  background-position: center;
+  transition: all 0.3s ease;
+}
+.drinks-box {
+  background-color: #00ffff;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: black;
+  border: 2px solid #8B4513; 
+  border-radius: 8px; 
+  margin-bottom: 20px; 
+  color: #491414; 
+  -webkit-text-stroke: 0.5px #ffffff; 
+  font-family: 'Arial', sans-serif;
+  background-image: url(pictures/drinks-menu-picture.png);
+  background-position: center;
+  background-size: 100% 100%;
+  transition: all 0.3s ease;
+}
+.extras-box {
+  background-color: #00ffff;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: black;
+  border: 2px solid #8B4513; 
+  border-radius: 8px; 
+  margin-bottom: 20px; 
+  color: #491414; 
+  -webkit-text-stroke: 0.5px #ffffff; 
+  font-family: 'Arial', sans-serif;
+  background-image: url(pictures/extras-menu-picture.png);
+  background-position: center;
+  background-size: 100% 100%;
+  transition: all 0.3s ease;
+}
+
+.container {
+  padding-top: 32px;
+  background-color: #f0e3d5;
+  min-height: 100vh;
+}
+
+body {
+  background-image: url(pictures/background-image.png);
+  background-color: #f8ebdb;
+  margin: 0;
+  padding: 0;
+}
+
+.durum-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.drinks-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.extras-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.message {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+  border-top: 3px double #8b4513;
+  position: relative;
+  font-size: 1.5rem;
+  color: #8b4513;
+  font-family: "Arial Black", sans-serif;
+  letter-spacing: 3px;
+  margin: 0;
+  margin-bottom: 30px;
+  border-bottom: 3px double #8b4513;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Turkish Durums</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="turkish-durums.css">
+  <link rel="icon" href="../pictures/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../pictures/logo.png" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <a href="../home-page.html" class="back-link">← Homepage</a>
+        <h1>TURKISH DURUMS</h1>
+    </div>
+
+    <div class="menu-categories">
+        <div class="category active" data-category="all">All</div>
+        <div class="category" data-category="chicken">Chicken Durums</div>
+        <div class="category" data-category="meat">Meat durums</div>
+        <div class="category" data-category="others">Others</div>
+    </div>    
+    
+    <table class="menu-table">
+        <thead>
+            <tr>
+                <th>Durum's</th>
+                <th>Price</th>
+                <th>Ingredients</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="menu-item chicken">
+                <td class="menu-item-name">Students Friend Chicken Durum</td>
+                <td class="price">80 TL</td>
+                <td class="ingredients">Marinated chicken, tomato, greens, onion, special sauce, 1 lavas</td>
+            </tr>
+            <tr class="menu-item chicken">
+                <td class="menu-item-name">Students Friend Chicken Zurna Durum</td>
+                <td class="price">110 TL</td>
+                <td class="ingredients">Marinated chicken, tomato, greens, onion, special sauce, 2 lavas</td>
+            </tr>
+            <tr class="menu-item chicken">
+                <td class="menu-item-name">Students Best Friend Chicken Bazooka Zurna Durum (60cm)</td>
+                <td class="price">140 TL</td>
+                <td class="ingredients">Marinated chicken, tomato, greens, onion, special sauce, 2.5 lavas</td>
+            </tr>
+            <tr class="menu-item meat">
+                <td class="menu-item-name">Meat Durum</td>
+                <td class="price">95 TL</td>
+                <td class="ingredients">Beef, tomato, canned meat, onion, special sauce, 1 lavas</td>
+            </tr>
+            <tr class="menu-item meat">
+                <td class="menu-item-name">Meat Zurna Durum</td>
+                <td class="price">135 TL</td>
+                <td class="ingredients">Beef, tomato, canned meat, onion, special sauce, 2 lavas</td>
+            </tr>
+            <tr class="menu-item meat">
+                <td class="menu-item-name">Meat Bazooka Zurna Durum (60cm)</td>
+                <td class="price">165 TL</td>
+                <td class="ingredients">Beef, tomato, canned meat, onion, special sauce, 2.5 lavas</td>
+            </tr>
+            <tr class="menu-item others">
+                <td class="menu-item-name">Mixed Durum</td>
+                <td class="price">100 TL</td>
+                <td class="ingredients">Beef, chicken, tomato, greens, onion, special sauce</td>
+            </tr>
+            <tr class="menu-item others">
+                <td class="menu-item-name">Adana Durum</td>
+                <td class="price">90 TL</td>
+                <td class="ingredients">Adana kebab, tomato, greens, roasted pepper, onion</td>
+            </tr>
+            <tr class="menu-item others"> 
+                <td class="menu-item-name">Durum Vegeterian's</td>
+                <td class="price">75 TL</td>
+                <td class="ingredients">Roasted vegetables, tomatoes, greens, special sauce</td>
+            </tr>
+            <tr class="menu-item others"> 
+                <td class="menu-item-name">Meatball Durum</td>
+                <td class="price">85 TL</td>
+                <td class="ingredients">Grilled meatballs, tomato, greens, onion, special sauce</td>
+            </tr>
+            <tr class="menu-item others">
+                <td class="menu-item-name">Special Durum (Recommended)</td>
+                <td class="price">110 TL</td>
+                <td class="ingredients">Beef tenderloin, special spices, cheddar cheese, tomato, greens</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="footer">
+        <p>Durumcu KAMİ © 2025</p>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+        
+    document.addEventListener('DOMContentLoaded', function() {
+        const categories = document.querySelectorAll('.category');
+        
+        categories.forEach(category => {
+            category.addEventListener('click', function() {
+                categories.forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+                
+                const selectedCategory = this.getAttribute('data-category');
+                const items = document.querySelectorAll('.menu-item');
+                
+                items.forEach(item => {
+                    if (selectedCategory === 'all') {
+                        item.style.display = 'table-row';
+                    } else {
+                        if (item.classList.contains(selectedCategory)) {
+                            item.style.display = 'table-row';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>
